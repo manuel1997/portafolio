@@ -1,0 +1,38 @@
+<section class="bg-amarillo transition duration-300 dark:bg-gray-900 ">
+    <div class="px-16 lg:px-20 py-9 shadow-xl">
+      <div class="flex items-center mb-12 lg:mb-16">
+        <div class="">
+          <h1 class="font-semibold italic text-gray-800 dark:text-amarillo text-3xl">Ivan Morillo</h1>
+          <p class="font-semibold ml-5 text-sm dark:text-sky-500 italic">Desarrollador Web</p>
+        </div>
+  
+        <label class="relative flex justify-between items-center group p-2 text-xl ml-auto">
+          <input id="toggle" #toggle type="checkbox" (change)="confTema(toggle)"
+            class="absolute left-1/2 -translate-x-1/2 w-full h-full peer appearance-none rounded-md" />
+          <span
+            class="w-16 h-8 flex items-center flex-snap-center ml-4 p-1 bg-gray-300 rounded-full duration-300 ease-in-out peer-checked:bg-sky-500 after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-md after:duration-300 peer-checked:after:translate-x-6 group-hover:after:translate-x-1"></span>
+        </label>
+      </div>
+  
+      <div class="lg:flex lg:justify-center items-center text-center lg:text-left mb-2">
+        <div class="lg:w-3/5">
+          <h1 class="lg:text-6xl text-2xl text-white font-bold lg:mb-6">Hola, bienvenidos <br> a mi sitio web.</h1>
+          <h2 class="lg:w-96 font-semibold text-gray-800 dark:text-amarillo mb-12">Mi nombre es Ivan Morillo,
+            Desarrollador de aplicaciones
+            web, backend y frontend.</h2>
+          <a type="button" target="_blank" href="assets/cv/curriculun_ivan_manuel.pdf" class="cursor-pointer bg-rojo text-white shadow-md  rounded py-3 px-6 mb-12 transition duration-300 hover:bg-red-500 hover:shadow-red-400/60 hover:scale-110 ">Ver
+            Curriculum
+          </a>
+          <p class="text-base dark:text-white italic font-serif">Viviendo, aprendiendo, Creando.</p>
+        </div>
+  
+        <div class="lg:w-2/4 animado opacity-0 transition-all ease-in-out duration-[1700ms] translate-x-20">
+          <img class="object-cover object-center" src="assets/img/laptop.svg">
+        </div>
+      </div>
+    </div>
+    <svg class="absolute overflow-hidden bg-amarillo dark:bg-rojo" preserveAspectRatio="none" version="1.1"
+      viewBox="0 0 2560 100" x="0" y="0">
+      <polygon class="text-gray-800 fill-current" points="2560 0 2560 100 0 100"></polygon>
+    </svg>
+  </section>

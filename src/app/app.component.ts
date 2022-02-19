@@ -16,13 +16,16 @@ export class AppComponent implements OnInit {
       private title:Title,
       private meta: Meta 
       ) {
-        this.title.setTitle(' Ivan Morillo | Sitio Web');
+        this.title.setTitle('Ivan Morillo | Desarrollador de Aplicaciones Web');
         this.meta.addTags([
-          {name: 'description', content: 'Soy ivan morillo, desarrollador con más de 3 años de experiencia en el medio laboral, trabajando con tecnologías como Angular, Nodejs, Php, Mysql, Mongodb, entre otras.'},
+          {name: 'description', content: 'Hola soy ivan morillo, desarrollador de aplicaciones web, con tecnologías como Angular, Nodejs, Php, Mysql, Mongodb, entre otras.'},
           {name: 'keywords', content: 'ivan morillo,desarrollador,web,programación,developer,angular,javascript'},
+
+          {name: 'og:title', content: 'Ivan Morillo | Desarrollador de Aplicaciones Web'},
+          {name: 'og:description', content: 'Hola soy ivan morillo, desarrollador de aplicaciones web, con tecnologías como Angular, Nodejs, Php, Mysql, Mongodb, entre otras.'},
+          {name: 'og:image', content: 'assets/img/portafolio.png'},
         ]);
       }
-   
 
   ngOnInit(): void {
     if(isPlatformBrowser(this.platformId)){

@@ -10,6 +10,7 @@ declare function iniciaJs():any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  url_base:string = 'https://manuel1997.github.io/portafolio-web/';
 
    constructor(
      @Inject(PLATFORM_ID) private platformId: Object,
@@ -22,7 +23,7 @@ export class AppComponent implements OnInit {
 
         this.meta.updateTag({property: 'og:title', content: 'Ivan Morillo | Desarrollador de Aplicaciones Web'});
         this.meta.updateTag({property: 'og:description', content: 'Hola soy ivan morillo, desarrollador de aplicaciones web, con tecnologías como Angular, Nodejs, Php, Mysql, Mongodb, entre otras.'});
-        this.meta.updateTag({property: 'og:image', content: 'assets/img/portafolio.png'});
+        this.meta.updateTag({property: 'og:image', content:`${this.url_base}assets/img/portafolio.png`});
       }
 
   ngOnInit(): void {

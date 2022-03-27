@@ -10,7 +10,7 @@ declare function iniciaJs():any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  url_base:string = 'https://manuel1997.github.io/portafolio-web/';
+  url_base:string = 'https://manuel1997.github.io/portafolio/';
 
    constructor(
      @Inject(PLATFORM_ID) private platformId: Object,

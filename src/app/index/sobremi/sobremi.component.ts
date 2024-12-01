@@ -4,8 +4,7 @@ import { ConfigService } from '../config.service'
 @Component({
   selector: 'app-sobremi',
   templateUrl: './sobremi.component.html',
-  styles: [
-  ]
+  styles: [``]
 })
 export class SobremiComponent {
   constructor(private _configService:ConfigService) { }
